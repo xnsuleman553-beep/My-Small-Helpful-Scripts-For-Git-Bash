@@ -11,5 +11,5 @@ else
     git commit -m "$msg"
 fi
 
-echo "Pushing to remote repository"
 git push
+echo "Pushed to remote repository"
