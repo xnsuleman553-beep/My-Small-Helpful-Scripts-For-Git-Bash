@@ -7,6 +7,7 @@ if [ -z "$(git status --porcelain)" ]; then
     fi
 else
     ls
+    read -p "Please Enter Your Branch Name: " branch
     read -p "Do You Want To Send All Files y/n: " msg
     if [ "$msg"  == "Y" ] || [ "$msg" == "y" ]; then
        read -p "Enter Commit Name: " name
@@ -20,6 +21,6 @@ else
     fi
 fi
 
-git push
+git push origin "$branch"
 echo "Pushed to remote repository"
 git status
