@@ -1,0 +1,17 @@
+if [ -z "$(git status --porcelain)" ]; then
+    echo "----------------------"
+    echo "No local changes to commit."
+    echo "----------------------"
+  
+    if [[ "$(git status -sb)" != *"ahead"* ]]; then
+        echo "Everything is up to date. Nothing to push!"
+        exit 0
+    fi
+else
+    read -p "Enter commit message: " msg
+    git add . 
+    git commit -m "$msg"
+fi
+
+echo "Pushing to remote repository..."
+git push
