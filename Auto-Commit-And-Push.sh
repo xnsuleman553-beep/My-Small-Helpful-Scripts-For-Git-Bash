@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ -z "$(git status --porcelain)" ]; then
     echo "No changes to commit."
   
