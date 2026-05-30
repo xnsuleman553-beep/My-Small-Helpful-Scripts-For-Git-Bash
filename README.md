@@ -1,26 +1,25 @@
-# My-Small-Helpful-Scripts-For-Git-Bash
+# My Small Helpful Scripts for Git Bash and Python
 
-Small Script Projects
+Welcome to my repository! This is a collection of simple, everyday utility scripts designed to speed up tasks, automate tedious Git commands, and clean up workspace files using Git Bash and Python.
 
-A collection of small scripts and mini projects made while learning programming and development.
-This repository includes useful tools, experiments, automation scripts, and practice projects created using different languages and technologies.
+---
 
-What You'll Find
-Beginner-friendly scripts
-Utility tools
-Automation projects
-Game experiments
-Learning-based mini projects
-Random coding ideas and tests
-Purpose
+## 🚀 Features & Scripts
 
-The goal of this repository is to improve programming skills, explore new technologies, and build practical projects step by step.
+### 1. Git Quick-Commit Tool (`quick_commit.sh`)
+A smart shell script that automates the standard `git add`, `git commit`, and `git push` flow while saving you from empty commits.
+* **Smart Checking:** It automatically runs a check before committing. If your workspace has no changes, it stops and warns you.
+* **Auto-Push:** Once you type your message, it saves the variables, commits the code, and pushes directly to your repository.
 
-Technologies
+### 2. Line Ending Sanitizer (`fix_lines.py`)
+A background Python script to stop Git from throwing annoying `LF will be replaced by CRLF` warnings by automatically standardizing your script files.
 
-Projects may include:
+---
 
-Python
-Bash
+## 📦 Project Structure
 
-This repository will continue to grow with new scripts and ideas over time 🚀
+```text
+my-small-helpful-scripts/
+├── README.md                  # This file
+├── Auto-Commit-And-Push.sh    # The Git automation shell script
+└── script-for-folders.sh      # A Script That Makes Folders For Project
