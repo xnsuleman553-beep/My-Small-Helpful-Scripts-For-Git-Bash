@@ -13,8 +13,8 @@ if [ -d ".git" ]; then
 fi
 echo "We Recommend You To Run This File On A Folder"
 echo "This Is A Folder Making Program"
-read -p "For Which Project You Want To Make Folders Game/GitProject: " asking
-if [ "$asking" == "Game" ]; then
+read -p "For Which Project You Want To Make Folders Game/Git: " asking
+if [ "$asking" == "Game" ] || [ "$asking" == "game" ]; then
     mkdir Assets
     mkdir Public-Sources
     mkdir Scripts
@@ -27,7 +27,7 @@ if [ "$asking" == "Game" ]; then
     mkdir Scripts/Players
     mkdir Scripts/Enemies
 fi
-if [ "$asking" == "GitProject" ]; then
+if [ "$asking" == "Git" ] || [ "$asking" == "git" ]; then
     mkdir .git/
     mkdir .gitignore
     mkdir app/
