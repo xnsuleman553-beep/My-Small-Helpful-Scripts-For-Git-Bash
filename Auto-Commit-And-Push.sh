@@ -18,7 +18,7 @@ else
     else
        read -p "Enter File Name: " file
        read -p "Enter Commit Name: " name2
-       git add file
+       git add "$file"
        git commit -m "$name2"
     fi
 fi
